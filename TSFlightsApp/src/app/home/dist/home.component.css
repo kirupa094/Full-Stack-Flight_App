@@ -1,0 +1,97 @@
+.outer_container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: top;
+}
+.outer_container .big_container {
+  width: 90%;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.outer_container .big_container .top_bar {
+  height: 40px;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.outer_container .big_container .top_bar span {
+  margin-left: 20px;
+}
+.outer_container .big_container .transparent_bg {
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+  height: auto;
+  min-height: 400px;
+  width: 100%;
+}
+@media screen and (max-width: 480px) {
+  .outer_container .big_container .transparent_bg {
+    width: 100%;
+    height: 100%;
+  }
+}
+.outer_container .big_container .transparent_bg .container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.outer_container .big_container .transparent_bg .container .search_pane {
+  margin-top: 20px;
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+}
+.outer_container .big_container .transparent_bg .container .search_pane .search_box {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  position: relative;
+}
+.outer_container .big_container .transparent_bg .container .search_pane .search_box select {
+  position: relative;
+  right: 20px;
+  background-color: white;
+  box-shadow: 2px 2px 2px grey;
+  width: auto;
+  height: 25px;
+  font-size: 20px;
+}
+@media screen and (max-width: 480px) {
+  .outer_container .big_container .transparent_bg .container .search_pane .search_box select {
+    font-size: 12px;
+  }
+}
+.outer_container .big_container .transparent_bg .container .search_pane button {
+  background-color: #415D65;
+  border-radius: 5px;
+  width: auto;
+  font-size: 20px;
+  color: white;
+}
+.outer_container .big_container .transparent_bg .container .flight_pane {
+  margin-top: 10px;
+  background-color: white;
+  width: 80%;
+  height: 80%;
+  padding: 20px;
+}
+.outer_container .big_container .transparent_bg .container .flight_pane .flight_results {
+  display: flex;
+  flex-direction: row;
+}
+.outer_container .big_container .transparent_bg .container .flight_pane .flight_headers {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+}
+.outer_container .big_container .transparent_bg .container .flight_pane .cell {
+  flex: 1;
+}
